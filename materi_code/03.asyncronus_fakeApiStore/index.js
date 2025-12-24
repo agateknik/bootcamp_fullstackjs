@@ -1,4 +1,5 @@
 BASE_URL = "https://fakestoreapi.com/products";
+const elementProduct = document.getElementById("productContainer");
 
 async function getData() {
   const data = await fetch(BASE_URL);
@@ -9,7 +10,6 @@ async function getData() {
 
 async function selectData() {
   const selectProduct = await getData();
-  const elementProduct = document.getElementById("productContainer");
 
   selectProduct.forEach((detail) => {
     // console.log(detail.title);
@@ -21,3 +21,19 @@ async function selectData() {
   });
 }
 selectData();
+
+const productName = document.getElementById("inputProduct");
+const productPrice = document.getElementById("inputPrice");
+const btnAddProduct = document.getElementById("buttonAddProduct");
+
+btnAddProduct.addEventListener("click", async () => {
+  const name = productName.value;
+  const price = productPrice.value;
+
+  const listProduct = document.createElement("li");
+  listProduct.textContent = `${name} and the Price is ${price}`;
+  elementProduct.appendChild(listProduct);
+
+  productName.value = "";
+  productPrice.value = "";
+});
