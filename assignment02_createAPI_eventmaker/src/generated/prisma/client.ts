@@ -30,7 +30,7 @@ export * from "./enums.js"
  * ```
  * const prisma = new PrismaClient()
  * // Fetch zero or more Events
- * const events = await prisma.events.findMany()
+ * const events = await prisma.event.findMany()
  * ```
  * 
  * Read more in our [docs](https://pris.ly/d/client).
@@ -40,12 +40,12 @@ export type PrismaClient<LogOpts extends Prisma.LogLevel = never, OmitOpts exten
 export { Prisma }
 
 /**
- * Model Events
+ * Model Event
  * 
  */
-export type Events = Prisma.EventsModel
+export type Event = Prisma.EventModel
 /**
- * Model Participants
+ * Model Participant
  * 
  */
-export type Participants = Prisma.ParticipantsModel
+export type Participant = Prisma.ParticipantModel

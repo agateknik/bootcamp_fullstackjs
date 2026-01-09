@@ -12,21 +12,19 @@ generator client {
 datasource db {
   provider = "sqlite"
 }
-
-model Events{
-  id String @id @default(cuid())
+model Event{
+  id String @id @default(cuid())      
   name String
   description String
   location String
   dateTime String
-  participants Participants[]
+  participants  Participant[]
 }
 
-model Participants{
+model Participant{
   id String @id @default(cuid())
   name String
   email String
   eventId String
-  event Events @relation(fields: [eventId], references: [id])
-
+  event Event @relation(fields: [eventId], references: [id])
 }

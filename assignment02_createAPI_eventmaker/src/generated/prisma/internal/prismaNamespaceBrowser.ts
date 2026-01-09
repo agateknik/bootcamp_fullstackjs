@@ -51,8 +51,8 @@ export const AnyNull = runtime.AnyNull
 
 
 export const ModelName = {
-  Events: 'Events',
-  Participants: 'Participants'
+  Event: 'Event',
+  Participant: 'Participant'
 } as const
 
 export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -68,7 +68,7 @@ export const TransactionIsolationLevel = {
 export type TransactionIsolationLevel = (typeof TransactionIsolationLevel)[keyof typeof TransactionIsolationLevel]
 
 
-export const EventsScalarFieldEnum = {
+export const EventScalarFieldEnum = {
   id: 'id',
   name: 'name',
   description: 'description',
@@ -76,17 +76,17 @@ export const EventsScalarFieldEnum = {
   dateTime: 'dateTime'
 } as const
 
-export type EventsScalarFieldEnum = (typeof EventsScalarFieldEnum)[keyof typeof EventsScalarFieldEnum]
+export type EventScalarFieldEnum = (typeof EventScalarFieldEnum)[keyof typeof EventScalarFieldEnum]
 
 
-export const ParticipantsScalarFieldEnum = {
+export const ParticipantScalarFieldEnum = {
   id: 'id',
   name: 'name',
   email: 'email',
   eventId: 'eventId'
 } as const
 
-export type ParticipantsScalarFieldEnum = (typeof ParticipantsScalarFieldEnum)[keyof typeof ParticipantsScalarFieldEnum]
+export type ParticipantScalarFieldEnum = (typeof ParticipantScalarFieldEnum)[keyof typeof ParticipantScalarFieldEnum]
 
 
 export const SortOrder = {

@@ -1,5 +1,5 @@
 {
-  "name": "06.hono-assigment",
+  "name": "assignment02_createAPI_eventmaker",
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/index.ts",
@@ -8,9 +8,9 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
+      "@prisma/engines",
       "better-sqlite3",
       "esbuild",
-      "@prisma/engines",
       "prisma"
     ]
   },
@@ -20,9 +20,10 @@
     "@prisma/adapter-better-sqlite3": "^7.2.0",
     "@prisma/client": "^7.2.0",
     "better-sqlite3": "^12.5.0",
+    "dotenv": "^17.2.3",
     "hono": "^4.11.3",
     "prisma": "^7.2.0",
-    "zod": "^4.3.4"
+    "zod": "^4.3.5"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
