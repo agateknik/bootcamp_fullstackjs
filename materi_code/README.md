@@ -6,4 +6,6 @@
 - Pertemuan 04 : pengenalan PNPM untuk package manager,praktek tipe data typescript, dan konsep transpiling TS menjadi JS
 - Pertemuan 05 : Pengenalan HONO sebagai backend framework , praktek membuat endpoint REST API (berbagai HTTP method) - project membuat aplikasi Todo (guides.devscale.id).
 - Pertemuan 10 : praktek basic react js menggunakan tanstack => create component dan implementasi props dari component menggunakan fitur tanstack loader, praktek fetch data dari apifakestore.
-- Pertemuan 11 : Pengenalan dan praktek react hook -> useState, useEffect, jotai sebagai State Management
+- Pertemuan 11 : Pengenalan dan praktek react hook -> useState, useEffect, jotai sebagai State Management.
+- Pertemuan 12 : Penggunaan tanstack query (useQuery dan useMutation) dan praktek konsep Island Architecture, materi praktek ini dijadikan [assignment 4]("https://github.com/agateknik/bootcamp_fullstackjs/tree/main/assignment04_tanstackQuery-islandArchitecture")
+- Pertemuan 18 : Praktek membuat aplikasi sederhana terintegrasi AI dengan Tanstack Start
