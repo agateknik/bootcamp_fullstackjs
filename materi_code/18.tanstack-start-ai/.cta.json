@@ -1,0 +1,16 @@
+{
+	"projectName": "18.tanstack-start-ai",
+	"mode": "file-router",
+	"typescript": true,
+	"tailwind": true,
+	"packageManager": "pnpm",
+	"git": true,
+	"install": true,
+	"addOnOptions": {},
+	"includeExamples": true,
+	"envVarValues": {},
+	"routerOnly": false,
+	"version": 1,
+	"framework": "react-cra",
+	"chosenAddOns": []
+}
